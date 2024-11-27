@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 
 Certainly! Here's the updated README.md file that includes the instructions for navigating into the project folder and also includes the key sections you mentioned.
 
 markdown
 Copy code
+=======
+>>>>>>> 7ef3fe6 (Initial commit: Added Calculator and To-Do projects)
 # FutureInternAssignment
 
 ## Project Description

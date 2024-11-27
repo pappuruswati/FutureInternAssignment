@@ -1,0 +1,74 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('calculate.png'); /* Path to your calculator image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Calculator Container */
+.calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%; /* Make it responsive */
+    max-width: 320px; /* Restrict max size for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 3rem;
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for buttons */
+    gap: 10px;
+}
+
+/* Buttons */
+.button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #ddd;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .calculator {
+        width: 95%; /* Adjust width for smaller devices */
+    }
+    .button {
+        font-size: 1rem; /* Reduce button font size for smaller screens */
+        padding: 0.8rem;
+    }
+    #display {
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
